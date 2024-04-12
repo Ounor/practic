@@ -1,0 +1,68 @@
+/* Стилизация контейнера */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #f7f7f7, #ddd);
+}
+
+/* Стилизация счетчика */
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #fafafa, #eee);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилизация кнопок */
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #ddd;
+}
+
+.button.plus {
+  background: linear-gradient(to right, #97ff97, #77dd77);
+}
+
+.button.minus {
+  background: linear-gradient(to right, #ff9797, #dd7777);
+}
+
+/* Стилизация окна результата */
+.result {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Стилизация окна сообщения */
+.message {
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 10px;
+  display: none;
+}
