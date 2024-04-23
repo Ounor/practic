@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Приветствие пользователей</title>
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css'%}" type="text/css">
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Введите ваше имя:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Отправить</button>
+    </form>
+    {% if user is not empty %}
+        <h2>Приветствую, {{ user.name }}!</h2>
+    {% else %}
+        <p>Пользователь не найден.</p>
+    {% endif %}
+</body>
+</html>
